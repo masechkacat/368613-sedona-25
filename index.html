@@ -74,10 +74,47 @@
           </li>
         </ul>
       </section>
-      <section class="search-form">
-         <h2>Заинтересовались?</h2>
-         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-         <!--Здесь будет форма-->
+      <section class="search">
+        <div class="search-info">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="search-map">
+          <div class="search-window">
+            <button class="search-btn" type="submit">Поиск гостиницы в Седоне</button>
+            <form class="search-form" action="hotel-search" method="get">
+              <div class="search-item check-in">
+                <label for="check-in">Дата заезда</label>
+                <input type="text" class="date" id="check-in" placeholder="24 апреля 2017">
+                <button class="calendar-btn" type="button" name="calendar">
+                  <img class="calendar-icon" src="img/calendar.svg" alt="Вызвать календарь" />
+                </button>
+              </div>
+              <div class="search-item check-out">
+                <label for="check-out">Дата выезда</label>
+                <input type="text" class="date" id="check-out" placeholder="4 июля 2017">
+                <button class="calendar-btn" type="button" name="calendar">
+                  <img class="calendar-icon" src="img/calendar.svg" alt="Вызвать календарь" />
+                </button>
+              </div>
+              <div class="search-row">
+                <div class="search-item adults">
+                  <label class="search-item-label" for="adults">Взрослые</label>
+                  <button class="input-control-less" type="button"><span class="less">-</span></button>
+                  <input class="input-control" type="text" value="2" id="adults" name="adults">
+                  <button class="input-control-more" type="button"><span class="more">+</span></button>
+                </div>
+                <div class="search-item kids">
+                  <label class="search-item-label" for="kids">Дети</label>
+                  <button class="input-control-less" type="button"><span class="less">-</span></button>
+                  <input class="input-control" type="text" value="0" id="kids" name="kids">
+                  <button class="input-control-more" type="button"><span class="more">+</span></button>
+                </div>
+              </div>
+              <button class="search-btn submit" type="submit" name="search-submit">Найти</button>
+         </form>
+       </div>
+     </div>
      </section>
     </main>
     <footer class="main-footer">
