@@ -6,6 +6,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -19,7 +20,7 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main class="main-content">
       <section class="welcome-card">
         <img src="img/welcome.svg" alt="Добро пожаловать в великолепную Седону" />
       </section>
@@ -30,10 +31,8 @@
       <section class="first-feature">
         <h2>Настоящий городок</h2>
         <span>№1</span>
-        <figure>
-          <img src="img/sedona.png" alt="Самобытная Седона">
-          <figcaption>Седона - не аттракцион для туристов, там течёт своя жизнь</figcaption>
-        </figure>
+        <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </section>
         <ul class="tips-list">
           <li class="first-tips-item">
             <h3>Жильё</h3>
@@ -48,14 +47,11 @@
             <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
-      </section>
       <section class="second-feature">
         <h2>Там есть мост дьявола</h2>
         <span>№2</span>
-        <figure>
-          <img src="img/devils-bridge.png" alt="Мост Дьявола">
-          <figcaption>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</figcaption>
-        </figure>
+        <p>Да, по нему можно пройти! Если, конечно, Вы осмелитесь</p>
+      </section>
         <ul class="last-features-list">
           <li class="last-features-item">
             <h3>Небольшая площадь</h3>
@@ -73,7 +69,6 @@
             <p>Большинство едет в Гранд-Каньон и толпится там</p>
           </li>
         </ul>
-      </section>
       <section class="search">
         <div class="search-info">
           <h2>Заинтересовались?</h2>
@@ -82,11 +77,12 @@
         <div class="search-map">
           <div class="search-window">
             <button class="search-btn" type="submit">Поиск гостиницы в Седоне</button>
-            <form class="search-form" action="hotel-search" method="get">
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <div class="search-item check-in">
                 <label for="check-in">Дата заезда</label>
                 <input type="text" class="date" id="check-in" placeholder="24 апреля 2017">
                 <button class="calendar-btn" type="button" name="calendar">
+                  <span class="visually-hidden">Вызвать календарь</span>
                   <img class="calendar-icon" src="img/calendar.svg" alt="Вызвать календарь" />
                 </button>
               </div>
@@ -94,21 +90,22 @@
                 <label for="check-out">Дата выезда</label>
                 <input type="text" class="date" id="check-out" placeholder="4 июля 2017">
                 <button class="calendar-btn" type="button" name="calendar">
+                  <span class="visually-hidden">Вызвать календарь</span>
                   <img class="calendar-icon" src="img/calendar.svg" alt="Вызвать календарь" />
                 </button>
               </div>
               <div class="search-row">
                 <div class="search-item adults">
                   <label class="search-item-label" for="adults">Взрослые</label>
-                  <button class="input-control-less" type="button"><span class="less">-</span></button>
+                  <button class="input-control-less" type="button">-<span class="visually-hidden">Уменьшить</span></button>
                   <input class="input-control" type="text" value="2" id="adults" name="adults">
-                  <button class="input-control-more" type="button"><span class="more">+</span></button>
+                  <button class="input-control-more" type="button">+<span class="visually-hidden">Увеличить</span></button>
                 </div>
                 <div class="search-item kids">
                   <label class="search-item-label" for="kids">Дети</label>
-                  <button class="input-control-less" type="button"><span class="less">-</span></button>
+                  <button class="input-control-less" type="button">-<span class="visually-hidden">Уменьшить</span></button>
                   <input class="input-control" type="text" value="0" id="kids" name="kids">
-                  <button class="input-control-more" type="button"><span class="more">+</span></button>
+                  <button class="input-control-more" type="button">+<span class="visually-hidden">Увеличить</span></button>
                 </div>
               </div>
               <button class="search-btn submit" type="submit" name="search-submit">Найти</button>
@@ -123,15 +120,16 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/tw-icon.svg" alt="Твитер"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube-icon.svg" alt="Ютуб"></a></li>
+          <li><a class="social-button" href="#"><img src="img/tw-icon.svg" alt="Твитер"><span class="visually-hidden">Твитер</span></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube-icon.svg" alt="Ютуб"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Разработано HTML академией"></a>
+        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Разработано HTML академией"><span class="visually-hidden">Разработано HTML академией</span></a>
       </p>
     </footer>
+   </div>
   </body>
 </html>
