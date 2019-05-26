@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Агенство "Седона"</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -34,15 +36,15 @@
         <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
         </section>
         <ul class="tips-list">
-          <li class="first-tips-item">
+          <li class="tips-item first">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="second-tips-item">
+          <li class="tips-item second">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
           </li>
-          <li class="third-tips-item">
+          <li class="tips-item third">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -55,12 +57,12 @@
         <ul class="last-features-list">
           <li class="last-features-item">
             <h3>Небольшая площадь</h3>
-            <span>№3</span>
+            <span>№1</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="last-features-item">
             <h3>Красивая дорога</h3>
-            <span>№3</span>
+            <span>№2</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="last-features-item">
@@ -76,10 +78,10 @@
         </div>
         <div class="search-map">
           <div class="search-window">
-            <button class="search-btn" type="submit">Поиск гостиницы в Седоне</button>
+            <button class="btn context" type="submit">Поиск гостиницы в Седоне</button>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
               <div class="search-item check-in">
-                <label for="check-in">Дата заезда</label>
+                <label for="check-in label">Дата заезда</label>
                 <input type="text" class="date" id="check-in" placeholder="24 апреля 2017">
                 <button class="calendar-btn" type="button" name="calendar">
                   <span class="visually-hidden">Вызвать календарь</span>
@@ -87,7 +89,7 @@
                 </button>
               </div>
               <div class="search-item check-out">
-                <label for="check-out">Дата выезда</label>
+                <label for="check-out label">Дата выезда</label>
                 <input type="text" class="date" id="check-out" placeholder="4 июля 2017">
                 <button class="calendar-btn" type="button" name="calendar">
                   <span class="visually-hidden">Вызвать календарь</span>
@@ -96,19 +98,19 @@
               </div>
               <div class="search-row">
                 <div class="search-item adults">
-                  <label class="search-item-label" for="adults">Взрослые</label>
+                  <label class="search-item label" for="adults">Взрослые</label>
                   <button class="input-control-less" type="button">-<span class="visually-hidden">Уменьшить</span></button>
                   <input class="input-control" type="text" value="2" id="adults" name="adults">
                   <button class="input-control-more" type="button">+<span class="visually-hidden">Увеличить</span></button>
                 </div>
                 <div class="search-item kids">
-                  <label class="search-item-label" for="kids">Дети</label>
+                  <label class="search-item label" for="kids">Дети</label>
                   <button class="input-control-less" type="button">-<span class="visually-hidden">Уменьшить</span></button>
                   <input class="input-control" type="text" value="0" id="kids" name="kids">
                   <button class="input-control-more" type="button">+<span class="visually-hidden">Увеличить</span></button>
                 </div>
               </div>
-              <button class="search-btn submit" type="submit" name="search-submit">Найти</button>
+              <button class="btn" type="submit" name="search-submit">Найти</button>
          </form>
        </div>
      </div>
@@ -120,14 +122,14 @@
       </p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#"><img src="img/tw-icon.svg" alt="Твитер"><span class="visually-hidden">Твитер</span></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube-icon.svg" alt="Ютуб"><span class="visually-hidden">Ютуб</span></a></li>
+          <li><a class="btn" href="#"><img src="img/tw-icon.svg" alt="Твитер"><span class="visually-hidden">Твитер</span></a></li>
+          <li><a class="btn" href="#"><img src="img/fb-icon.svg" alt="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="btn" href="#"><img src="img/youtube-icon.svg" alt="Ютуб"><span class="visually-hidden">Ютуб</span></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Разработано HTML академией"><span class="visually-hidden">Разработано HTML академией</span></a>
+        <a class="copyright-btn" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Разработано HTML академией"><span class="visually-hidden">Разработано HTML академией</span></a>
       </p>
     </footer>
    </div>
