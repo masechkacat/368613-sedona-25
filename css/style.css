@@ -19,7 +19,6 @@ body {
   margin: -1px;
 }
 .container {
-  margin-top: 0;
 
   max-width: 1200px;
   margin-left:  auto;
@@ -33,59 +32,62 @@ a {
 }
 
 .main-navigation {
-  width: 98px;
-  height: 12px;
+  margin: 0;
+  padding: 0;
+
+  width: auto;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   text-align: center;
   color: #000000;
 
-  background-color: #f2f2f2;
+
 }
 
-.site-navigation,
-.user-navigation {
+.site-navigation{
+  margin:0 ;
+  padding: 0;
+
   list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a{
   color: #000000;
 }
 
 .welcome-card {
+  padding-top: -56px;
   position: relative;
-  width: 1200px;
-  height: 773px;
-  padding-top: 132px;
-  margin-top: 0px;
-  background: url(../img/background-photo.jpg)no-repeat top;
+  min-width: 1200px;
+  min-height: 773px;
+  background: url("../img/background-photo.jpg")no-repeat top;
   z-index: -1;
 }
 
 .welcome-card::after {
   content: "";
   position: absolute;
-  top: 530px;
-  left: 0;
-  right: 0;
   bottom: -1px;
   width: 100%;
-  height: 59px;
-  background:  url(../img/border-intro.svg) no-repeat center bottom;
+  background:  url("../img/border-intro.svg") no-repeat center bottom;
   background-size: 100% auto;
 }
 
 .welcome-card img {
   display: block;
   width: 459px;
-  height: 353px;
+  padding-top: 76px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .title-site {
+  display: block;
   position: absolute;
   top: 600px;
   bottom: 0px;
@@ -96,6 +98,7 @@ a {
 }
 
 .title-site h1 {
+  display: block;
   padding-top: 61px;
   padding-left: 380px;
   width: 440px;
@@ -104,12 +107,14 @@ a {
 }
 
 .title-site p {
+  display: block;
   padding-bottom: 56px;
   font-size: 14px;
   line-height: 26px;
 }
 
 .first-feature {
+  display: block;
   text-align: center;
   background-color: #81b3d2;
   color: #ffffff;
@@ -273,7 +278,6 @@ a {
 .input-control-less:hover,
 .input-control-less:focus, .input-control-more:hover,
 .input-control-more:focus {
-  stroke: #000000;
 }
 .input-control-less:active, .input-control-more:active {
   stroke: #81b3d2;

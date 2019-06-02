@@ -11,21 +11,24 @@
     <div class="container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" alt="Логотип агенсства «Седона»">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo-and-video.html">Фото и видео</a></li>
+          <li>
+            <a class="main-header-logo">
+              <img src="img/logo.svg" alt="Логотип агенсства «Седона»">
+            </a>
+          </li>
           <li><a href="state-map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
+        <section class="welcome-card">
+          <img src="img/welcome.svg" alt="Добро пожаловать в великолепную Седону" />
+        </section>
       </nav>
     </header>
     <main class="main-content">
-      <section class="welcome-card">
-        <img src="img/welcome.svg" alt="Добро пожаловать в великолепную Седону" />
-      </section>
+
       <section class="title-site">
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p>Расмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -105,9 +108,9 @@
               <div class="search-row">
                 <div class="search-item adults">
                   <label class="search-item label" for="adults">Взрослые</label>
-                  <button class="input-control-less" type="button">
-                    <svg width="11" height="11">
-                      <line x1="0" y1="5.5" x2="11" y2="5.5" stroke="#cacaca" stroke-width="3"/>
+                  <button class="input-control-less" type="button" name="less">
+                    <svg width="11" height="11" >
+                      <line fill="none" x1="0" y1="5.5" x2="11" y2="5.5" stroke="#cacaca" stroke-width="3"/>
                     </svg>
                     <span class="visually-hidden">Уменьшить</span>
                   </button>
