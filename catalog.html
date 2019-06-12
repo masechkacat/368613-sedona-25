@@ -15,10 +15,10 @@
           <img src="img/logo.svg" alt="Логотип агенсства «Седона»">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo-and-video.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          <li class="item-navigation"><a href="info.html">Информация</a></li>
+          <li class="item-navigation"><a href="photo-and-video.html">Фото и видео</a></li>
+          <li class="item-navigation"><a href="state-map.html">Карта штата</a></li>
+          <li class="site-navigation-current item-navigation"><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -81,12 +81,45 @@
                    </div>
                  <button class="btn-transparent" type="submit">Показать</button>
                 </div>
-                </fieldset>
               </div>
           </form>
       </section>
+
       <section class="catalog">
-        <h2 class="visually-hidden">Список гостиниц</h2>
+        <h2 class="visually-hidden">Результаты поиска отелей в Седоне</h2>
+          <section class="hotels-sort">
+            <div class="sort-title">
+              <h3 class="visually-hidden">Сортировка результатов</h3>
+              <div class="sort-result-title">Найдено: <span class="hotels__sort-result-count" id="hotels-count">3</span></div>
+            </div>
+            <div class="sort-types">
+              <ul class="sort-list">
+                <li class="sort-list-title">
+                  Сортировка:
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link link-active" href="#">По цене</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По типу</a>
+                </li>
+                <li class="sort-item">
+                  <a class="sort-link" href="#">По рейтингу</a>
+                </li>
+              </ul>
+            </div>
+            <div class="updown-sort">
+              <ul class="updown-sort-list">
+                <li class="updown-sort-item">
+                  <a class="updown-sort-link link-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+                </li>
+                <li class="updown-sort-item">
+                  <a class="updown-sort-link link-down link-active" href="#"><span class="visually-hidden">По убыванию</span></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        <h3 class="visually-hidden">Список гостиниц</h3>
         <ul class="catalog-list">
           <li class="catalog-item">
             <div class="catalog-item-image">
@@ -95,9 +128,13 @@
               </a>
             </div>
             <div class="catalog-item-title">
-              <h3><a href="" class="catalog-item-link">Amara resort & spa</a></h3>
+              <div class="catalog-item-link">
+                <h3><a href="#">Amara resort & spa</a></h3>
+            </div>
+            <div class="catalog-item-info">
                   <div class="catalog-item-type">гостиница</div>
                   <div class="catalog-item-price">от 4000 Р.</div>
+            </div>
                   <div class="catalog-item-actions">
                       <a href="#" class="btn">подробнее</a>
                       <a href="#" class="btn context">забронировать</a>
@@ -120,9 +157,13 @@
               </a>
             </div>
             <div class="catalog-item-title">
-              <h3><a href="#" class="catalog-item-link">Desert Quail Inn</a></h3>
+              <div class="catalog-item-link">
+                <h3><a href="#">Desert Quail Inn</a></h3>
+              </div>
+              <div class="catalog-item-info">
                             <div class="catalog-item-type">мотель</div>
                             <div class="catalog-item-price">от 3000 Р.</div>
+              </div>
                             <div class="catalog-item-actions">
                                 <a href="#" class="btn">подробнее</a>
                                 <a href="#" class="btn context">забронировать</a>
@@ -144,9 +185,13 @@
               </a>
             </div>
             <div  class="catalog-item-title">
-               <h3><a href="#" class="catalog-item-link">Villas At Poco Diablo</a></h3>
+              <div class="catalog-item-link">
+               <h3><a href="#">Villas At Poco Diablo</a></h3>
+             </div>
+            <div class="catalog-item-info">
                             <div class="catalog-item-type">апартаменты</div>
                             <div class="catalog-item-price">от 2000 Р.</div>
+            </div>
                             <div class="catalog-item-actions">
                                 <a href="#" class="btn">подробнее</a>
                                 <a href="#" class="btn context">забронировать</a>
